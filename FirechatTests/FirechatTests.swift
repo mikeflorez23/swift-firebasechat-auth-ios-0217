@@ -4,7 +4,7 @@
 //
 //  Created by Johann Kerr on 3/21/17.
 //  Copyright © 2017 Johann Kerr. All rights reserved.
-//
+
 
 import XCTest
 import Pods_Firechat
@@ -48,7 +48,7 @@ class FirechatTests: XCTestCase {
             }
             
         }
-
+        
         
     }
     
@@ -68,14 +68,14 @@ class FirechatTests: XCTestCase {
             })
         }
         
-        waitForExpectations(timeout: 25) { (error) in
+        waitForExpectations(timeout: 40) { (error) in
             if error != nil {
                 
             }
             
         }
     }
-
+    
     
     func randomEmail(length: Int) -> String {
         let allowedChars = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -92,5 +92,5 @@ class FirechatTests: XCTestCase {
         return randomString
     }
     
-
+    
 }
